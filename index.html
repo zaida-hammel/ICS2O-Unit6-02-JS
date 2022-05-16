@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <body>
+  <body onload="cookieClicked()">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
@@ -38,8 +38,10 @@
         <br>
         <br>
         <th>
-              <img src="./images/cookieClicker.png" alt="cookie" width="auto" height="auto"/>
-            </th>
+          <img src="./images/cookieClicker.png" alt="cookie" width="auto" height="auto" onclick="cookieClicked()"/>
+        </th>
+        <br>
+        <br>
         <div id="answers"></div>
       </main>
     </div>
